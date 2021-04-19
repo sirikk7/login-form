@@ -10,7 +10,7 @@ function handleLogin() {
        document.getElementById("result").style.color = "Green";
 
        setTimeout(() => {
-         window.location.href="/grades"
+         window.location.href="grades"
        }, 5000);
       } else {
        document.getElementById("result").innerHTML = "Invalid email Id /pwd";
