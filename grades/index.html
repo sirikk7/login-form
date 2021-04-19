@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="grades.js"></script>
+</head>
+  <body>
+    <div id="main">
+      <form onsubmit="return getGrade();" class="login-form">
+        <h1>Find Your Percentage and Grade</h1>
+        <div>
+          <input
+            required
+            type="number"
+            step="1"
+            name="marks"
+            id="marks"
+            max="100"
+            placeholder="Enter Your Marks"
+          />
+        </div>
+        <div>
+          <input
+            step="1"
+            required
+            max="100"
+            type="number"
+            name="total marks"
+            id="total-marks"
+            placeholder="Enter Your Total Marks"
+          />
+        </div>
+        <div>
+          <button type="submit">Get your grade</button>
+        </div>
+        <div  class="marks-box">
+          <label>Percentage: <span id="percent">?</span>%</label>
+        </div>
+
+        <div class="marks-box">
+          <label>Grade: <span id="grade">?</span></label>
+        </div>
+
+        <div id="result"></div>
+      </form>
+    </div>
+  </body>
+</html>

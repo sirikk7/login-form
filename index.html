@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reg form</title>
+    <link rel="stylesheet" href="./app.css" />
+    <script src="./app.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <form onsubmit="return handleLogin();" class="login-form">
+        <h1>Facebook</h1>
+        <div>
+          <input
+            required
+            type="text"
+            name="userName"
+            id="email-id"
+            placeholder="Email id"
+          />
+        </div>
+        <div>
+          <input
+            required
+            type="password"
+            name="pwd"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <div>
+          <button type="submit">Login</button>
+        </div>
+        <div id="result">
+          
+          </div>
+    
+      </form>
+    </div>
+  </body>
+</html>
