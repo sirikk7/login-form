@@ -16,8 +16,8 @@ function getGrade() {
   } else {
     grade = "FAIL 😭";
   }
-document.getElementById("percent").innerHTML = percentage;
-document.getElementById("grade").innerHTML = grade;
+  document.getElementById("percent").innerHTML = percentage;
+  document.getElementById("grade").innerHTML = grade;
   const elements = document.querySelectorAll(".marks-box");
 
   for (let element of elements) {
